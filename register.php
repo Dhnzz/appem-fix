@@ -37,7 +37,7 @@
               <div class="col-lg-12 d-none d-lg-block bg-login-image"></div>
               <div class="col-lg-12">
                 <div class="p-5">
-                  <div class="text-center text-danger mt-n4 ">
+                  <div class="text-center text-success mt-n4 ">
                     <h1 class="h4 text-gray-900"><h1>Registrasi Akun</h1><h1>E-Complaint Gorontalo</h1>
                   </div>
                   <form class="user mt-3" method="post" action="simpan_masyarakat.php">
@@ -65,14 +65,14 @@
                     <div class="form-group">
                       
                     </div>
-                    <input type="submit" class="btn btn-danger btn-user btn-block" value="Daftar!">
+                    <input type="submit" class="btn btn-success btn-user btn-block" value="Daftar!">
                       
                     <hr>
                     
                   </form>
                   <div class="text-center text-dark">
                     Sudah Punya Akun?<br>
-                    <a class="small text-danger" href="index.php">Silahkan Login!</a>
+                    <a class="small text-success" href="index.php">Silahkan Login!</a>
                   </div>
                   
                 </div>
