@@ -80,9 +80,9 @@
               E-Complaint Gorontalo adalah web pengaduan keluhan masyrakat indonesia khususnya di daerah Gorontalo Dengan Layanan Unggulan Seperti :
             </p>
             <ul>
-              <li><i class="bx bx-check-double"></i> Pengaduan Kerusuhan atau demo di sekitar anda</li>
-              <li><i class="bx bx-check-double"></i> Penyampaian keluhan oleh masyarakat kepada pemerintah atas pelayanan yang tidak sesuai dengan standar pelayanan</li>
-              <li><i class="bx bx-check-double"></i> Kritikan Atau Masukan</li>
+              <li><i class="bx bx-check-double" style ="color:#1cc88a"></i> Pengaduan Kerusuhan atau demo di sekitar anda</li>
+              <li><i class="bx bx-check-double" style ="color:#1cc88a"></i> Penyampaian keluhan oleh masyarakat kepada pemerintah atas pelayanan yang tidak sesuai dengan standar pelayanan</li>
+              <li><i class="bx bx-check-double" style ="color:#1cc88a"></i> Kritikan Atau Masukan</li>
             </ul>
             <p>
                E-Complaint Gorontalo adalah web pengaduan yang tepat untuk anda yang tinggal di Gorontalo, dengan E-Complaint Masyarakat Gorontalo akan lebih di permudah dalam melaporkan masalah masalah kehidupan sehari - hari
@@ -102,7 +102,7 @@
             <div class="card">
               <img src="assets/img/WhyUs1.png" class="card-img-top" alt="...">
               <div class="card-icon">
-                <i class="bx bx-book-reader"></i>
+                <i class="bx bx-book-reader" ></i>
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="http://localhost/appem2/index.php">Pengaduan Kerusuhan atau demo di sekitar anda</a></h5>

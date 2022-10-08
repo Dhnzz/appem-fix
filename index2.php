@@ -37,7 +37,7 @@
               <div class="col-lg-12 d-none d-lg-block bg-login-image"></div>
               <div class="col-lg-12">
                 <div class="p-5">
-                  <div class="text-center text-danger mb-5">
+                  <div class="text-center text-success mb-5">
                     <h1 class="h4 text-gray-900"><h2>Web Pengaduan Masyarakat<br>E-Complaint Gorontalo</h2>
                   </div>
                   <form class="user mt-3" method="post" action="cek_login.php">
@@ -50,19 +50,19 @@
                     <div class="form-group">
                       
                     </div>
-                    <input type="submit" class="btn btn-danger btn-user btn-block" value="Login!">
+                    <input type="submit" class="btn btn-success btn-user btn-block" value="Login!">
                       
                     <hr>
                     
                   </form>
                   <div class="text-center text-dark">
                     Belum Punya Akun?<br>
-                    <a class="small text-danger" href="register.php"><h6>Registrasi</h6></a>
+                    <a class="small text-success" href="register.php"><h6>Registrasi</h6></a>
                   </div>
                   <hr>
                   
                   <div class="text-center">
-                    <a class="small text-danger" href="index3.php"><h6>Masuk Sebagai Admin/Petugas</h6></a>
+                    <a class="small text-success" href="index3.php"><h6>Masuk Sebagai Admin/Petugas</h6></a>
                   </div>
                 </div>
               </div>

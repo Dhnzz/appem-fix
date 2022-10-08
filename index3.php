@@ -37,7 +37,7 @@
               <div class="col-lg-12 d-none d-lg-block bg-login-image"></div>
               <div class="col-lg-12">
                 <div class="p-5">
-                  <div class="text-center text-danger">
+                  <div class="text-center text-success">
                     <h1 class="h4 text-gray-900 mt-n4"><h4>Welcome Admin/Petugas</h4 ><h2>E-Complaint Gorontalo</h2>
                   </div>
                   <form class="user" method="post" action="cek_login2.php">
@@ -50,14 +50,14 @@
                     <div class="form-group">
                       
                     </div>
-                    <input type="submit" class="btn btn-danger btn-user btn-block" value="Login!">
+                    <input type="submit" class="btn btn-success btn-user btn-block" value="Login!">
                       
                     <hr>
                     
                   </form>
 
                   <div class="text-center">
-                    <a class="small text-danger" href="index2.php"><h6>Masuk Sebagai User/Masyarakat</h6></a>
+                    <a class="small text-success" href="index2.php"><h6>Masuk Sebagai User/Masyarakat</h6></a>
                   </div>
                   
                 </div>
