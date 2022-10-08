@@ -1,3 +1,50 @@
+<script type="text/javascript">
+    function showTime() {
+        var a_p = "";
+        var greet = "";
+        var today = new Date();
+        var curr_hour = today.getHours();
+        var curr_minute = today.getMinutes();
+        var curr_second = today.getSeconds();
+        if (curr_hour < 12) {
+            a_p = "AM";
+        } else {
+            a_p = "PM";
+        }
+        if(curr_hour < 12){
+            greet = "Selamat Pagi,";
+        }else if(curr_hour > 12 && curr_hour < 15){
+            greet = "Selamat Siang,";
+        }else if(curr_hour > 15 && curr_hour < 18){
+            greet = "Selamat Sore,";
+        }else if(curr_hour > 18){
+            greet = "Selamat Malam,";
+        }
+        if (curr_hour == 0) {
+            curr_hour = 12;
+        }
+        if (curr_hour > 12) {
+            curr_hour = curr_hour - 12;
+        }
+        curr_hour = checkTime(curr_hour);
+        curr_minute = checkTime(curr_minute);
+        curr_second = checkTime(curr_second);
+        document
+            .getElementById('time')
+            .innerHTML = " " + curr_hour + ":" + curr_minute + ":" + curr_second + a_p;
+        document
+            .getElementById('greet')
+            .innerHTML = greet;
+    }
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    setInterval(showTime, 500);
+</script>
 <?php
 
 require "../koneksi.php";
@@ -28,21 +75,23 @@ if (isset($_GET['url']))
 else
 {
 	?>
-Selamat Datang di Web pengaduan masyarakat E-Complaint Gorontalo, web yang
-dibuat untuk melaporkan pelanggaran atau penyimpangan kejadian-kejadian yang ada
-pada masyarakat Gorontalo
-<br><br>
-Anda Login Sebagai :
-<h2>
-    <b>
-        <?php echo $_SESSION['nama']; ?>
+
+        <div class="d-flex">
+            <div class="ml-0 bg-danger px-2 rounded text-light">
+                <div id="date"></div>
+            </div>
+            <div class="ml-2 bg-danger px-2 rounded text-light">
+                <div id="time"></div>
+            </div>
+        </div>
+        <h3><div id="greet"></div><?php echo $_SESSION['nama']; ?></h3>
 
         <h4 class="mt-5">
             <b>Informasi Pengaduan</b>
         </h5>
         <hr>
 
-        <div class="row mt-5">
+        <div class="row mt-3">
             <div class="col-sm-3">
                 <div class="card text-white bg-danger mb-3">
                     <div class="card-body">
@@ -61,7 +110,7 @@ Anda Login Sebagai :
             <div class="col-sm-3">
                 <div class="card text-white bg-danger mb-3">
                     <div class="card-body">
-                        <h5 class="card-title">Jumlah Masyarakat Yang Mengadu</h5>
+                        <h5 class="card-title">Jumlah Masyarakat</h5>
                         <div class="row mr-auto mt-4">
                             <div class="col-3">
                                 <h1 class="fa fa-users" aria-hidden="true"></i>
@@ -80,7 +129,7 @@ Anda Login Sebagai :
         </h5>
         <hr>
 
-        <div class="row mt-5" style="height: 24vh;">
+        <div class="row mt-3" style="height: 24vh;">
             <div class="col-sm-2">
                 <a href="?url=verifikasi_pengaduan" class="btn btn-lg btn-info">
                     <i class="fa fa-eye" aria-hidden="true"></i>
@@ -95,7 +144,40 @@ Anda Login Sebagai :
 
         <br>
         <br>
+        <script>
+            var months = [
+                'Januari',
+                'Februari',
+                'Maret',
+                'April',
+                'Mei',
+                'Juni',
+                'Juli',
+                'Agustus',
+                'September',
+                'Oktober',
+                'November',
+                'Desember'
+            ];
+            var date = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Minggu";
+            weekday[1] = "Senin";
+            weekday[2] = "Selasa";
+            weekday[3] = "Rabu";
+            weekday[4] = "Kamis";
+            weekday[5] = "Jum'at";
+            weekday[6] = "Sabtu";
 
+            var nowadays = weekday[date.getDay()];
+            var day = date.getDate();
+            var month = date.getMonth();
+            var year = date.getFullYear();
+
+            document
+                .getElementById("date")
+                .innerHTML = " " + nowadays + ", " + day + " " + months[month] + " " + year;
+        </script>
         <?php
  }
 ?>
