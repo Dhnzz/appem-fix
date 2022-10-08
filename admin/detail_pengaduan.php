@@ -17,10 +17,17 @@
 
   <!-- Custom styles for this template-->
   <link href="../css/sb-admin-2.min.css" rel="stylesheet">
-
+  
 </head>
 
 <body id="page-top">
+  <div class="form-group cols-sm-6">
+  <a href="?url=verifikasi_pengaduan" class="btn btn-primary btn-icon-split text-light mb-3">
+    <span class="icon">
+      <i class="fas fa-arrow-left pt-1"></i>
+    </span>
+    <span class="text">Kembali</span>
+  </a>
 
 <div class="card shadow">
   <div class="card-header">
@@ -35,13 +42,6 @@
         ?>
 
   <div class="card-body">
-  <div class="form-group cols-sm-6">
-  <a href="?url=verifikasi_pengaduan" class="btn btn-primary btn-icon-split">
-    <span class="icon text-white-50">
-      <i class="fas fa-arrow-left"></i>
-    </span>
-    <span class="text">Kembali</span>
-  </a>
 
   
   
@@ -55,10 +55,7 @@
       
       <div class="form-group cols-sm-6">
         <label> Isi Laporan</label>
-        <textarea class="form-control" rows="7" name="isi_laporan" readonly="">
-          <?php echo $data['isi_laporan']; ?>
-
-        </textarea>
+        <textarea class="form-control" rows="7" name="isi_laporan" readonly><?php echo $data['isi_laporan']; ?></textarea>
       </div>
       <div class="form-group cols-sm-6">
         <label>Bukti Foto</label>

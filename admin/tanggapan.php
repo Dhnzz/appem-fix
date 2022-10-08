@@ -22,6 +22,13 @@
 
 <body id="page-top">
 
+  <div class="form-group cols-sm-6">
+  <a href="?url=verifikasi_pengaduan" class="btn btn-primary btn-icon-split mb-3 text-light">
+    <span class="icon text-white-50">
+      <i class="fas fa-arrow-left"></i>
+    </span>
+    <span class="text">Kembali</span>
+  </a>
 <div class="card shadow">
   <div class="card-header">
     Tanggapan
@@ -29,13 +36,6 @@
     
 
   <div class="card-body">
-  <div class="form-group cols-sm-6">
-  <a href="?url=verifikasi_pengaduan" class="btn btn-primary btn-icon-split">
-    <span class="icon text-white-50">
-      <i class="fas fa-arrow-left"></i>
-    </span>
-    <span class="text">Kembali</span>
-  </a>
 
   
   
@@ -53,17 +53,14 @@
       
       <div class="form-group cols-sm-6">
         <label>Tulis Tanggapan</label>
-        <textarea class="form-control" rows="7" name="tanggapan" >
-          
-
-        </textarea>
+        <textarea class="form-control" rows="7" name="tanggapan" ></textarea>
       </div>
       <div class="form-group cols-sm-6">
         <label>ID Petugas</label>
         <input type="text" name="id_petugas" value="<?php echo $_SESSION['id_petugas']; ?>" class="form-control" readonly>
       </div>
 
-      <input type="submit" class="btn btn-primary btn-user" value="Tanggapi!">
+      <input type="submit" class="btn btn-primary btn-user text-light" value="Tanggapi!">
 
    
 

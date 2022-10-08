@@ -22,18 +22,18 @@
 
 <body id="page-top">
 
+  <div class="form-group cols-sm-6">
+  <a href="?url=lihat_pengaduan" class="btn btn-primary btn-icon-split text-light mb-3">
+    <span class="icon">
+      <i class="fas fa-arrow-left"></i>
+    </span>
+    <span class="text">Kembali</span>
+  </a>
 <div class="card shadow">
   <div class="card-header">
     Detail Pengaduan
   </div>
   <div class="card-body">
-  <div class="form-group cols-sm-6">
-  <a href="?url=lihat_pengaduan" class="btn btn-primary btn-icon-split">
-    <span class="icon text-white-50">
-      <i class="fas fa-arrow-left"></i>
-    </span>
-    <span class="text">Kembali</span>
-  </a>
 </div>
   
     <form action="" method="post" class="form-horizontal" enctype="multipart/form-data">

@@ -45,8 +45,8 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
+                    <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
+                        <thead class="text-center">
                             <tr>
                                 <th>ID</th>
                                 <th>Tanggal</th>
@@ -65,13 +65,13 @@
                       
                  ?>
 
-                            <tbody>
+                            <tbody class="text-center">
                                 <tr>
                                     <td><?php echo $data['id_pengaduan']; ?></td>
                                     <td><?php echo $data['tgl_pengaduan']; ?></td>
                                     <td><?php echo $data['nik']; ?></td>
                                     <td><?php echo $data['isi_laporan']; ?></td>
-                                    <td><?PHP echo $data['foto']; ?></td>
+                                    <td><img class="rounded" width="150px" src="../foto/<?= $data['foto']; ?>" alt=""></td>
                                     <td>
 
                                         <!--button-->

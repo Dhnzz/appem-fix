@@ -48,10 +48,9 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
                         <thead class="text-center">
                             <tr>
-                                <th>ID</th>
                                 <th>Tanggal</th>
                                 <th>NIK</th>
                                 <th>Isi Laporan</th>
@@ -69,9 +68,8 @@
                       
                  ?>
 
-                            <tbody>
+                            <tbody class="text-center">
                                 <tr>
-                                    <td><?php echo $data['id_pengaduan']; ?></td>
                                     <td><?php echo $data['tgl_pengaduan']; ?></td>
                                     <td><?php echo $data['nik']; ?></td>
                                     <td><?php echo $data['isi_laporan']; ?></td>
@@ -79,13 +77,13 @@
                                     <td class="text-center"><?php 
                                       switch ($data['status']) {
                                         case 0:
-                                          echo "<div class='rounded-pill text-light bg-danger col-6 mx-auto'>Belum Ditanggapi</div>";
+                                          echo "<div class='badge badge-danger text-wrap rounded-pill col-6 mx-auto'>Belum Ditanggapi</div>";
                                           break;
                                         case 'proses':
-                                          echo "<div class='rounded-pill text-light bg-warning col-6 mx-auto'>Sedang Diproses</div>";
+                                          echo "<div class='badge badge-warning text-wrap rounded-pill col-6 mx-auto'>Sedang Diproses</div>";
                                           break;
                                         case 'selesai':
-                                          echo "<div class='rounded-pill text-light bg-success col-6 mx-auto'>Sudah Ditanggapi</div>";
+                                          echo "<div class='badge badge-success text-wrap rounded-pill col-6 mx-auto'>Sudah Ditanggapi</div>";
                                           break;
                                         
                                         default:
@@ -124,16 +122,6 @@
 
     </div>
     <!-- End of Main Content -->
-
-    <!-- Footer -->
-    <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Mohamad Farhan Palilati XII RPL 1</span>
-            </div>
-        </div>
-    </footer>
-    <!-- End of Footer -->
 
 </div>
 <!-- End of Content Wrapper -->

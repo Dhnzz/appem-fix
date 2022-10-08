@@ -48,7 +48,7 @@
       </div>
 
       <div class="form-group col-sm-6">
-        <input type="submit" value="Simpan" class="btn btn-primary">
+        <input type="submit" value="Simpan" class="btn btn-primary text-light">
         <input type="reset" value="Kosongkan" class="btn btn-warning">
       </div>
 

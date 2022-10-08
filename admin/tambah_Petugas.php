@@ -22,6 +22,10 @@
 
 <body id="page-top">
 
+  <a href="admin.php?url=lihat_petugas" class="btn btn-primary btn-lg text-light mb-3">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Kembali</a>
+  
 <div class="card shadow">
   <div class="card-header">
     Tambah Petugas
@@ -54,7 +58,7 @@
       </div>
       
       <div class="form-group col-sm-6">
-        <input type="submit" value="Simpan" class="btn btn-primary">
+        <input type="submit" value="Simpan" class="btn btn-primary text-light">
         <input type="reset" value="Kosongkan" class="btn btn-warning">
       </div>
 

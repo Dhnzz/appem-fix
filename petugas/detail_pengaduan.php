@@ -21,7 +21,13 @@
 </head>
 
 <body id="page-top">
-
+  
+  <a href="?url=verifikasi_pengaduan" class="btn btn-primary btn-icon-split mb-3 text-light">
+    <span class="icon text-white-50">
+      <i class="fas fa-arrow-left"></i>
+    </span>
+    <span class="text">Kembali</span>
+  </a>
 <div class="card shadow">
   <div class="card-header">
     Detail Pengaduan
@@ -36,12 +42,6 @@
 
   <div class="card-body">
   <div class="form-group cols-sm-6">
-  <a href="?url=verifikasi_pengaduan" class="btn btn-primary btn-icon-split">
-    <span class="icon text-white-50">
-      <i class="fas fa-arrow-left"></i>
-    </span>
-    <span class="text">Kembali</span>
-  </a>
 
   <a href="proses.php?id=<?php echo $data['id_pengaduan']; ?>" class="btn btn-danger btn-icon-split" onclick="return confirm('yakin akan diproses?')">
     <span class="icon text-white-50">
@@ -61,10 +61,7 @@
       
       <div class="form-group cols-sm-6">
         <label>Isi Laporan</label>
-        <textarea class="form-control" rows="7" name="isi_laporan" readonly="">
-          <?php echo $data['isi_laporan']; ?>
-
-        </textarea>
+        <textarea class="form-control" rows="7" name="isi_laporan" readonly><?php echo $data['isi_laporan']; ?></textarea>
       </div>
       <div class="form-group cols-sm-6">
         <label>Bukti Foto</label>

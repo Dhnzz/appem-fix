@@ -22,6 +22,10 @@
 
 <body id="page-top">
 
+  <a href="admin.php?url=lihat_petugas" class="btn btn-primary btn-lg text-light mb-3">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Kembali</a>
+
 <div class="card shadow">
   <div class="card-header">
     Edit Data Petugas
@@ -58,15 +62,14 @@
       <div class="form-group cols-sm-6">
         <label>Level</label>
         <select class="form-control" name="level">
-          <option value="<?php echo $data['level']; ?>"><?php echo $data['level']; ?></option>
-          <option value="admin">Admin</option>
-          <option value="petugas">Petugas</option>
+          <option value="admin" <?php if ($data['level'] == 'admin') echo 'selected' ?>>Admin</option>
+          <option value="petugas" <?php if ($data['level'] == 'petugas') echo 'selected' ?>>Petugas</option>
         </select>
       </div>
       
       <div class="form-group col-sm-6">
-        <input type="submit" value="Edit Data" class="btn btn-primary">
-        <input type="reset" value="Kosongkan" class="btn btn-warning">
+        <input type="submit" value="Edit Data" class="btn btn-primary text-light">
+        <input type="reset" value="Reset" class="btn btn-warning">
       </div>
 
     </form>
