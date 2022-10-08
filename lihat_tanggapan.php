@@ -59,13 +59,13 @@
       </div>
       
       <div class="form-group cols-sm-6">
-        <label>Tulis Laporan</label>
+        <label>Laporan</label>
         <textarea class="form-control" rows="7" name="isi_laporan" readonly=""><?php echo $data['isi_laporan']; ?>
         </textarea>
       </div>
 
       <div class="form-group cols-sm-6">
-        <label>Tulis Tanggapan</label>
+        <label>Tanggapan</label>
         <textarea class="form-control" rows="7" name="isi_laporan" readonly=""><?php echo $data['tanggapan']; ?>
         </textarea>
       </div>

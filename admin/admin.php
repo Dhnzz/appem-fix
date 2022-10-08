@@ -47,12 +47,12 @@ if($_SESSION['level']!="admin")
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-danger topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-success topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <!--<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
-          </button>
+          </button> -->
 
           <h2 class="text-light mx-auto pt-2">Sistem Pengaduan Masyarakat</h3>
 

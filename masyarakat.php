@@ -98,7 +98,7 @@ if(!isset($_SESSION['nama']))
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-danger topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-success topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -125,7 +125,7 @@ if(!isset($_SESSION['nama']))
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Farhan Palilati XII RPL 1</span>
+            <span>Copyright &copy; KSL - ORCA</span>
           </div>
         </div>
       </footer>

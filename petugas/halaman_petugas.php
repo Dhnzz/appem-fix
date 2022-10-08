@@ -77,11 +77,11 @@ else
 	?>
 
         <div class="d-flex">
-            <div class="d-flex align-items-center ml-0 bg-danger px-2 rounded text-light">
+            <div class="d-flex align-items-center ml-0 bg-success px-2 rounded text-light">
                 <i class="fas fa-calendar-alt pr-2"></i>
                 <div id="date"></div>
             </div>
-            <div class="d-flex align-items-center ml-2 bg-danger px-2 rounded text-light">
+            <div class="d-flex align-items-center ml-2 bg-success px-2 rounded text-light">
                 <i class="fas fa-clock pr-2"></i>
                 <div id="time"></div>
             </div>
@@ -100,7 +100,7 @@ else
 
         <div class="row mt-3">
             <div class="col-sm-3">
-                <div class="card text-white bg-danger mb-3">
+                <div class="card text-white bg-success mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Jumlah Pengaduan</h5>
                         <div class="row mr-auto mt-4">
@@ -115,7 +115,7 @@ else
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card text-white bg-danger mb-3">
+                <div class="card text-white bg-success mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Jumlah Masyarakat</h5>
                         <div class="row mr-auto mt-4">
