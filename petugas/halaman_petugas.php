@@ -12,13 +12,13 @@
             a_p = "PM";
         }
         if(curr_hour < 12){
-            greet = "Selamat Pagi,";
-        }else if(curr_hour > 12 && curr_hour < 15){
-            greet = "Selamat Siang,";
-        }else if(curr_hour > 15 && curr_hour < 18){
-            greet = "Selamat Sore,";
-        }else if(curr_hour > 18){
-            greet = "Selamat Malam,";
+            greet = "Selamat Pagi,&nbsp";
+        }else if(curr_hour >= 12 && curr_hour < 15){
+            greet = "Selamat Siang,&nbsp";
+        }else if(curr_hour >= 15 && curr_hour < 18){
+            greet = "Selamat Sore,&nbsp";
+        }else if(curr_hour >= 18){
+            greet = "Selamat Malam,&nbsp";
         }
         if (curr_hour == 0) {
             curr_hour = 12;
@@ -77,14 +77,21 @@ else
 	?>
 
         <div class="d-flex">
-            <div class="ml-0 bg-danger px-2 rounded text-light">
+            <div class="d-flex align-items-center ml-0 bg-danger px-2 rounded text-light">
+                <i class="fas fa-calendar-alt pr-2"></i>
                 <div id="date"></div>
             </div>
-            <div class="ml-2 bg-danger px-2 rounded text-light">
+            <div class="d-flex align-items-center ml-2 bg-danger px-2 rounded text-light">
+                <i class="fas fa-clock pr-2"></i>
                 <div id="time"></div>
             </div>
         </div>
-        <h3><div id="greet"></div><?php echo $_SESSION['nama']; ?></h3>
+        <h3>
+            <div class="d-flex mt-3">
+                <div id="greet"></div>
+                <?php echo $_SESSION['nama']; ?>
+            </div>
+        </h3>
 
         <h4 class="mt-5">
             <b>Informasi Pengaduan</b>
